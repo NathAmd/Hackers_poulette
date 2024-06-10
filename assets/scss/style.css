@@ -1,0 +1,27 @@
+form {
+  display: flex;
+  justify-content: center;
+  border: solid 0.1em black;
+  background-color: gray;
+  border-radius: 1em;
+  padding: 2em;
+  margin: 2em;
+  height: -moz-min-content;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+form .inputfield {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-size: 1em;
+  border: solid 0.1em black;
+  border-radius: 1em;
+}
+
+a {
+  color: gray;
+}/*# sourceMappingURL=style.css.map */

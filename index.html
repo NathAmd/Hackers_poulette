@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/scss/style.css">
+</head>
+
+<body>
+    <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        <input type="text" id="lastname" name="lastname" placeholder="Votre prénom" required>
+        <select id="gender" name="gender" required>
+            <option value="male">Homme</option>
+            <option value="female">Femme</option>
+        </select>
+        <input type="email" id="email" name="email" placeholder="Votre email" required>
+        <input type="text" id="country" name="country" placeholder="Votre pays" required>
+        <select id="subject" name="subject">
+            <option value="other">Autre</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+        <input type="text" id="honeypot" name="honeypot" style="display: none;">
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
