@@ -8,6 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = sanitize_input($_POST["subject"]);
     $message = sanitize_input($_POST["message"]);
 
+    echo "<div class=\"Error\">";
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "Format d'email invalide";
     } else {
@@ -26,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Une erreur s'est produite lors de l'envoi de votre message";
         }
     }
+    echo "</div>";
 }
 
 function sanitize_input($data) {

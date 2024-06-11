@@ -10,21 +10,29 @@
 
 <body>
     <form id="contactForm">
-        <input type="text" id="name" name="name" placeholder="Votre nom" required>
-        <input type="text" id="lastname" name="lastname" placeholder="Votre prénom" required>
+        <label>Nom:</label>
+        <input class="inputfield" type="text" id="name" name="name" placeholder="Votre nom" required>
+        <label>Prénom:</label>
+        <input class="inputfield" type="text" id="lastname" name="lastname" placeholder="Votre prénom" required>
+        <label>Genre:</label>
         <select id="gender" name="gender" required>
             <option value="male">Homme</option>
             <option value="female">Femme</option>
+            <option value="HDC">Hélicoptère de combat</option>
         </select>
-        <input type="email" id="email" name="email" placeholder="Votre email" required>
-        <input type="text" id="country" name="country" placeholder="Votre pays" required>
+        <label>Email:</label>
+        <input class="inputfield" type="email" id="email" name="email" placeholder="Votre email" required>
+        <label>Pays:</label>
+        <input class="inputfield" type="text" id="country" name="country" placeholder="Votre pays" required>
+        <label>Option:</label>
         <select id="subject" name="subject">
-            <option value="other">Autre</option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
+            <option value="other">Option 1</option>
+            <option value="option1">Option 2</option>
+            <option value="option2">Option 3</option>
         </select>
-        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
-        <input type="text" id="honeypot" name="honeypot" style="display: none;">
+        <label>Message:</label>
+        <textarea class="inputfield" id="message" name="message" placeholder="Votre message" required></textarea>
+        <input class="inputfield" type="text" id="honeypot" name="honeypot" style="display: none;">
         <button type="submit">Envoyer</button>
     </form>
 
